@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <!-- 의미론적 태그(sematic tag) -->
+    <header>
+        <h1><a href = "/index.html">WEB</a></h1>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href = "1.html">HTML</a></li>
+            <li><a href = "2.html">CSS</a></li>
+            <li><a href = "3.html">JAVASCRIPT</a></li>
+        </ol>    
+    </nav>
+
+    <article>
+        <script>
+            var bodyTag = document.querySelector('body');
+        </script>
+        <input type="button" value="night" onclick="
+            alert('지금부터 색상을 변경하겠습니다.');
+            if(this.value === 'night'){
+                bodyTag.style.backgroundColor='black';
+                bodyTag.style.color='white';
+                this.value = ' day ';
+            } else {
+                bodyTag.style.backgroundColor='white';
+                bodyTag.style.color='black';
+                this.value = 'night';
+            }
+            alert('색상 변경이 끝났습니다.');
+        ">
+        <h2>CSS</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iusto necessitatibus delectus corrupti, quisquam omnis fuga placeat eum expedita dolores adipisci, libero accusamus repellat animi natus tempora quae blanditiis sapiente!
+    </article>
+
+</body>
+</html>
