@@ -21,26 +21,35 @@
         function addzero(num) {
             if(num < 10) { num = "0" + num; }    
              return num;    
-        }
-    
+        }    
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Hi+Melody|Poor+Story|Sunflower:300&display=swap" rel="stylesheet">
 </head>
 
 <body>    
-    <div style="text-align:right">
-        <h1>■ 현재시간 ■<br><span id="nowTimes"></span></h1>
-    </div>
-    <h1><a href="index2.html">Index</a></h1>
+    <style>
+        *{
+            font-family: 'Sunflower', sans-serif;
+        }
+        a{
+            font-family: 'Hi Melody', cursive;
+            font-size: 25px;
+        }
+    </style> 
+    <h1 style="text-align:right; font-family: 'Poor Story', cursive;">
+        ■ 현재시간 ■<br><span id="nowTimes"></span>
+    </h1>
+    <a href="index2.html"> <h1>Index</h1></a>
     <script>
         var bodyTag = document.querySelector('body');        
     </script>
     
-    <input type="button" value="night ver." onclick="
+    <input type="button" value="night mode (야간모드)" onclick="
         var links = document.querySelectorAll('a');
-       if( this.value === 'night ver.'){
+       if( this.value === 'night mode (야간모드)'){
             bodyTag.style.color='white';
             bodyTag.style.backgroundColor='black';
-            this.value = ' day  ver.';
+            this.value = ' day  mode (주간모드)';
             var i = 0;
             while (i < links.length){
             links[i].style.color = 'white';
@@ -49,7 +58,7 @@
         } else {
             bodyTag.style.color='black';
             bodyTag.style.backgroundColor='white';
-            this.value = 'night ver.';
+            this.value = 'night mode (야간모드)';
             var i = 0;
             while (i < links.length){
             links[i].style.color = 'black';
@@ -58,6 +67,14 @@
         }"
         style="font-size:20px; width:100%; height:30px;"
     >
+    <div style="text-align:center">
+        <h3>구글검색
+        <form action="https://www.google.com/search">
+            <input type="text" name = "q" value="javascript">
+            <input type="submit" value="검색">
+        </form>
+        </h3>
+    </div>
 
     <!-- ol: ordered list // ul: unordered list -->
     <ol>
