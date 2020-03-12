@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2|Monoton&display=swap" rel="stylesheet">
+        <script>
+            function randomGeneration(arrayLength){
+                return Math.floor(Math.random()*arrayLength)
+            }
+        </script>
+    </head>
+<body onclick="
+    var colors = ['red', 'green', 'blue', 'powderblue', 'tomato'];
+    this.style.backgroundColor= colors[randomGeneration(colors.length)];
+    this.style.color='white';
+">
+    <style>
+        *{
+            /* border-color: red;
+            border-width: 5px;
+            border-style: solid; */
+            /* border: red 5px solid; */
+            font-family: 'Baloo 2', cursive;
+
+
+        }
+        h1{
+            /* border: 5px solid red; */
+            padding-top: 10px;
+            margin: 10px;
+            /* width: 300px;
+            height: 200px; */
+            display: inline; 
+            /* h1태그는 디폴트가 블럭 */
+            font-family: 'Monoton', cursive;
+        }
+        a{
+            display: block;
+            /* a, img 태그는 디폴트가 인라인 */
+        }
+
+    </style>
+    <h1> BOX </h1>
+    <h1> BOX </h1>
+    Lorem <a href="http://w3c.org">ipsum</a> dolor sit amet consectetur adipisicing elit. Consequatur, eligendi sed et illo, itaque est dolorum ullam asperiores, aspernatur praesentium animi iste? Enim perferendis quibusdam, reiciendis fugiat commodi voluptates sunt?
+    <img src="https://source.unsplash.com/featured" width="30%"> 
+</body>
+</html>
